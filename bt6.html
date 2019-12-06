@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<input type="button" onclick="checkV()" value="Check v">
+<script>
+    let a = [];
+    for (let i = 0; i < 10; i++) {
+        a[i]= parseFloat(prompt("nhap phan tu"));
+    }
+    document.getElementById("demo").innerHTML = "mang vua nhap la :" +a;
+
+    function checkV() {
+        let v = parseFloat(prompt("nhap v"));
+        let kt=false;
+        for (let i = 0; i <10 ; i++) {
+        }
+        if (v==a[i]){
+            kt==true;
+            break;
+
+        }
+        if(kt){
+            alert(v+ "is in array");
+        }else{
+            alert(v+ "is not in array");
+        }
+    }
+
+
+</script>
+</body>
+</html>

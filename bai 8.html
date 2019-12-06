@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<button onclick="sapXep()">sapxep</button>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = parseFloat(prompt("nhap phan tu"));
+    }
+
+    function sapXep() {
+        arr.sort(function (a,b){return a-b});
+        document.getElementById("demo").innerHTML = arr;
+    }
+
+
+
+</script>
+</body>
+</html>
